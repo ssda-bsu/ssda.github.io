@@ -1,1 +1,1 @@
-# ssda.github.io
+# ssda-bsu.github.io
