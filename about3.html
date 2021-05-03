@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="author" content="Poleung">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src='js/echarts5.min.js'></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/visual.js"></script>
+    <title>探秘冬奥场馆</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="mainbox">
+    <ul class="clearfix">
+        <!--目录菜单-->
+        <li>
+            <div class="logo" onclick="location.href='index.html'"><img src="images/logo.png" alt=""></div>
+            <div class="menu" onclick="location.href='about1.html'"><span><img src="images/icon1.png" alt=""></span><span>冬奥进行时</span></div>
+            <div class="menu" onclick="location.href='about2.html'"><span><img src="images/icon2.png" alt=""></span><span>看冬奥账单</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about2.html#top1'">1.冬奥账单怎么算</p>
+                <p onclick="location.href='about2.html#top2'">2.冬奥会预计收支</p>
+                <p onclick="location.href='about2.html#top3'">3.“烧钱”or“挣钱”</p>
+                <p onclick="location.href='about2.html#top4'">4.冬奥遗产</p>
+            </div>
+            <div class="menu active" onclick="location.href='about3.html'"><span><img src="images/icon3.png" alt=""></span><span>探冬奥场馆</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about3.html#top1'">1.国家速滑馆</p>
+                <p onclick="location.href='about3.html#top2'">2.交通规划图</p>
+                <p onclick="location.href='about3.html#top3'">3.场馆投资</p>
+            </div>
+            <div class="menu" onclick="location.href='about4.html'"><span><img src="images/icon4.png" alt=""></span><span>观冬奥经济</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about4.html#top1'">1.经济增长</p>
+                <p onclick="location.href='about4.html#top2'">2.产业改革</p>
+                <p onclick="location.href='about4.html#top3'">3.改善环境</p>
+            </div>
+        </li>
+        <!--右侧主体-->
+        <li>
+            <div class="conTitle titleBg3">
+                <div class="fullSpace"></div>
+                <div class="navTitle">探秘冬奥场馆</div>
+                <div class="fullSpace"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">国家速滑馆<a name="top1"></a></div>
+                <div class="contBox">
+                    <div class="contPanel"><img src="images/p5.png" alt="" width="600px" class="imgBorder"></div>
+                    <div class="contPanel">
+                        <div class="contentBox"><p>北京赛区有7个场馆，延庆赛区有两个场馆，张家口赛区有4个场馆。北京赛区唯一新建的冰上竞赛场馆——国家速滑馆，被形象地称为“冰丝带”。</p>
+                            　　<p>最大化利用现有场馆和设施是北京冬奥筹办工作中的一大亮点。44个冬奥场馆和设施中，结合本次冬奥筹办需要而建设的场馆和设施只有7个，占总数的16%。</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">交通规划图<a name="top2"></a></div>
+                <div class="c1" style="text-align: center">北京 2022 年冬奥会场馆和交通规划图(点击查看大图)</div>
+                <div style="margin: 30px auto;" onclick="location.href='images/p6l.jpg'"><img src="images/p6.jpg" alt="" width="900px"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">场馆建设<a name="top3"></a></div>
+                <div id="ec6" style="width:100%;height: 70%;border-radius: 3%;margin-top: 3%"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">场馆建设</div>
+                <div class="contBox">
+                    <div class="contPanel" id="ec7" style="height: 35rem"></div>
+                    <div class="contPanel" id="ec8" style="height: 35rem"></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        getSankeyData();
+        getCatPiesData();
+        getPiesData();
+    })
+</script>
+</body>
+</html>

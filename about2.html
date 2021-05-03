@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="author" content="Poleung">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src='js/echarts5.min.js'></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/visual.js"></script>
+    <title>冬奥账单怎么看？</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="mainbox">
+    <ul class="clearfix">
+        <!--目录菜单-->
+        <li>
+            <div class="logo" onclick="location.href='index.html'"><img src="images/logo.png" alt=""></div>
+            <div class="menu" onclick="location.href='about1.html'"><span><img src="images/icon1.png" alt=""></span><span>冬奥进行时</span></div>
+            <div class="menu active" onclick="location.href='about2.html'"><span><img src="images/icon2.png" alt=""></span><span>看冬奥账单</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about2.html#top1'">1.冬奥账单怎么算</p>
+                <p onclick="location.href='about2.html#top2'">2.冬奥会预计收支</p>
+                <p onclick="location.href='about2.html#top3'">3.“烧钱”or“挣钱”</p>
+                <p onclick="location.href='about2.html#top4'">4.冬奥遗产</p>
+            </div>
+            <div class="menu" onclick="location.href='about3.html'"><span><img src="images/icon3.png" alt=""></span><span>探冬奥场馆</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about3.html#top1'">1.国家速滑馆</p>
+                <p onclick="location.href='about3.html#top2'">2.交通规划图</p>
+                <p onclick="location.href='about3.html#top3'">3.场馆投资</p>
+            </div>
+            <div class="menu" onclick="location.href='about4.html'"><span><img src="images/icon4.png" alt=""></span><span>观冬奥经济</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about4.html#top1'">1.经济增长</p>
+                <p onclick="location.href='about4.html#top2'">2.产业改革</p>
+                <p onclick="location.href='about4.html#top3'">3.改善环境</p>
+            </div>
+        </li>
+        <!--右侧主体-->
+        <li>
+            <div class="conTitle titleBg2">
+                <div class="fullSpace"></div>
+                <div class="navTitle">冬奥“账单”怎么看？</div>
+                <div class="fullSpace"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">冬奥账单怎么看？<a name="top1"></a></div>
+                <div class="c1">从一个国家获得举办资格到奥运会正式开幕，该国特别成立的奥运会组织委员会（下文简称“国家奥组委”)发挥着巨大作用。国家奥组委负责赛事的组织、运营和管理，奥运赛事的花销直接与国家奥组委密切相关。<p>因此，国家奥组委产生的花销大多与办赛直接相关。而奥运会产生的收入，也全部归入国家奥组委的账目下并进行核算。</p></div>
+                <div style="margin: 30px auto;"><img src="images/p3.jpg" alt="" width="900px"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">冬奥账单怎么看？</div>
+                <div class="contBox">
+                    <div class="contPanel" style="margin-top: -6%"><img src="images/p4.jpg" alt="" width="600px" class="imgBorder"></div>
+                    <div class="contPanel">
+                        <div class="contentBox">事实上，花在赛事上的钱只是九牛一毛。为了让奥运会亮丽、完美地呈现在世人面前，当地政府和社会人士会投入大量资金来完善城市的基础设施（简称“非奥组委支出”）。</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">冬奥会预计收支<a name="top2"></a></div>
+                <div class="c1">节俭办赛是北京申冬奥的一大理念和目标。北京提出节俭办赛的底气很大程度来自2008年奥运会所留下的“遗产”，冬奥会需要的12个冰上项目场馆，已经有11个是现成的，只需要新建一个场馆——国家速滑馆。<p>此外，北京2022年冬奥会奥运村建设将全部由企业投资建成，这大大降低了北京冬奥组委的财政预算。</p></div>
+                <div class="contPanel" id="ec3" style="height: 70%;margin-top: -5%;border-radius: 3%;"></div>
+                <div class="contPanel" style="height: 70%;margin-top: -5%"><img src="images/p9.jpg" alt="" width="600px" class="imgBorder"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">冬奥会预计收支<a name="top2"></a></div>
+                <div id="ec4" style="width:100%;height: 70%;border-radius: 3%;margin-top: 3%"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">“烧钱”or“挣钱”？<a name="top3"></a></div>
+                <div class="contBox" style="padding: 5%;">
+                    <div style="width:30%;float: left;">
+                        <p style="color: #00bf04">绿色办奥</p>
+                        <div class="contentBox">从国际奥委会公布的历届冬奥会举办成本的文件中可以看到，举办一届冬奥会显然是一笔不小的开销，冰雪项目的发展，更少不了财力的支持。那么冬奥会究竟是“烧钱”，还是“挣钱”呢？据相关数据显示，历届冬奥会的花销不等，尤以2014年的索契冬奥会最为烧钱，总支出超过500亿美元。</div>
+                    </div>
+                    <div style="width:70%;float: left;height: 600px;" id="ec5"></div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">冬奥，能给我们留下什么<a name="top4"></a></div>
+                <div class="contBox" style="padding: 5%;">
+                    <div style="width:30%;float: left;">
+                        <p style="color: #00bf04">奥运遗产</p>
+                        <div class="contentBox">长久以来，没有哪个城市会单纯为了挣钱而申奥。举办奥运会并不仅仅是单纯的经济问题，它牵扯到政治、经济、社会发展等方方面面，因此并不能用单一维度去衡量。带动全民健身促成3亿人上冰雪、加速交通建设促进就业、改善环境让蓝天白云成为常态等等都将是一届冬奥会带给我们的一系列成效。</div>
+                    </div>
+                    <div class="contPanel" style="height: 70%;margin-top: -5%"><img src="images/p10.jpg" alt="" width="800px" class="imgBorder"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        getRingsData();
+        getScatterData();
+        getBarData();
+    })
+</script>
+</body>
+</html>

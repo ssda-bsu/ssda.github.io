@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="author" content="Poleung">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src='js/echarts5.min.js'></script>
+    <script type="text/javascript" src="js/echarts-wordcloud.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/visual.js"></script>
+    <title>冬奥进行时</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="mainbox">
+    <ul class="clearfix">
+        <!--目录菜单-->
+        <li>
+            <div class="logo" onclick="location.href='index.html'"><img src="images/logo.png" alt=""></div>
+            <div class="menu active" onclick="location.href='about1.html'"><span><img src="images/icon1.png" alt=""></span><span>冬奥进行时</span></div>
+            <div class="menu" onclick="location.href='about2.html'"><span><img src="images/icon2.png" alt=""></span><span>看冬奥账单</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about2.html#top1'">1.冬奥账单怎么算</p>
+                <p onclick="location.href='about2.html#top2'">2.冬奥会预计收支</p>
+                <p onclick="location.href='about2.html#top3'">3.“烧钱”or“挣钱”</p>
+                <p onclick="location.href='about2.html#top4'">4.冬奥遗产</p>
+            </div>
+            <div class="menu" onclick="location.href='about3.html'"><span><img src="images/icon3.png" alt=""></span><span>探冬奥场馆</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about3.html#top1'">1.国家速滑馆</p>
+                <p onclick="location.href='about3.html#top2'">2.交通规划图</p>
+                <p onclick="location.href='about3.html#top3'">3.场馆投资</p>
+            </div>
+            <div class="menu" onclick="location.href='about4.html'"><span><img src="images/icon4.png" alt=""></span><span>观冬奥经济</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about4.html#top1'">1.经济增长</p>
+                <p onclick="location.href='about4.html#top2'">2.产业改革</p>
+                <p onclick="location.href='about4.html#top3'">3.改善环境</p>
+            </div>
+        </li>
+        <!--右侧主体-->
+        <li>
+            <div class="conTitle titleBg">
+                <div class="fullSpace"></div>
+                <div class="navTitle">冬奥进行时</div>
+                <div class="fullSpace"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">冬奥进行时</div>
+                <div class="contBox">
+                    <div class="contPanel"><img src="images/p1.jpg" alt="" width="600px" class="imgBorder"><p>巴赫官宣（图源：新华社）</p></div>
+                    <div class="contPanel">
+                        <div class="contentBox">2015年7月31日，在马来西亚吉隆坡举行的国际奥委会第128次全会上，国际奥委会主席巴赫宣布：中国北京，获得2022年第24届冬季奥林匹克运动会举办权。北京，成为历史上第一个既举办过夏奥会又举办冬奥会的<span style="font-weight: bold;color: #761c19">“双奥之城”</span>。</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">冬奥进行时</div>
+                <div class="contBox" style="padding: 5%;">
+                    <div style="width:30%;float: left;">
+                        <p style="color: #00bf04">绿色办奥</p>
+                        <div class="contentBox"><p>自申奥之初，奥申委就确立了以运动员为中心、可持续发展、节俭办赛三大理念，绿色办奥更是其中的核心理念之一。
+                            公众期待张家口不再“唱配角”，能真正同北京做到有机融合，协同发展。</p><p>如何合理安排冬奥预算支出，如何节俭办赛和避免“后奥运效应”，冬奥能为为京张地区乃至整个中国带来何种经济效用，将成为万众瞩目的焦点。</p></div>
+                    </div>
+                    <div style="width:70%;float: left;padding: 5%;"><img src="images/p2.jpg" alt="" width="900px" class="imgBorder"><p style="font-size: 16px;">2015年7月31日，申奥成功后中国申奥代表团欢呼（图源：新华社）</p></div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">冬奥进行时</div>
+                <div class="contBox" style="padding: 5%;">
+                    <div style="width: 100%;"><img src="images/e1.png" alt="" class="imgBorder" style="margin-right: 10%;"><img src="images/e2.png" alt="" class="imgBorder"></div>
+                    <p style="font-size: 20px;">2019年9月17日，北京冬奥会和冬残奥会吉祥物正式发布，首批冬奥吉祥物特许商品销售火爆。</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        getWordData();
+    })
+</script>
+</body>
+</html>

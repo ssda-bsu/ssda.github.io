@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="author" content="Poleung">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src='js/echarts5.min.js'></script>
+    <script type="text/javascript" src="js/lodash.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/visual.js"></script>
+    <title>北京2022年冬奥会经济展望</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="mainbox">
+    <ul class="clearfix">
+        <!--目录菜单-->
+        <li>
+            <div class="logo" onclick="location.href='index.html'"><img src="images/logo.png" alt=""></div>
+            <div class="menu" onclick="location.href='about1.html'"><span><img src="images/icon1.png" alt=""></span><span>冬奥进行时</span></div>
+            <div class="menu" onclick="location.href='about2.html'"><span><img src="images/icon2.png" alt=""></span><span>看冬奥账单</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about2.html#top1'">1.冬奥账单怎么算</p>
+                <p onclick="location.href='about2.html#top2'">2.冬奥会预计收支</p>
+                <p onclick="location.href='about2.html#top3'">3.“烧钱”or“挣钱”</p>
+                <p onclick="location.href='about2.html#top4'">4.冬奥遗产</p>
+            </div>
+            <div class="menu" onclick="location.href='about3.html'"><span><img src="images/icon3.png" alt=""></span><span>探冬奥场馆</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about3.html#top1'">1.国家速滑馆</p>
+                <p onclick="location.href='about3.html#top2'">2.交通规划图</p>
+                <p onclick="location.href='about3.html#top3'">3.场馆投资</p>
+            </div>
+            <div class="menu active" onclick="location.href='about4.html'"><span><img src="images/icon4.png" alt=""></span><span>观冬奥经济</span></div>
+            <div class="subMenu">
+                <p onclick="location.href='about4.html#top1'">1.经济增长</p>
+                <p onclick="location.href='about4.html#top2'">2.产业改革</p>
+                <p onclick="location.href='about4.html#top3'">3.改善环境</p>
+            </div>
+        </li>
+        <!--右侧主体-->
+        <li>
+            <div class="conTitle titleBg4">
+                <div class="fullSpace"></div>
+                <div class="navTitle">冬奥会经济展望</div>
+                <div class="fullSpace"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">北京2022年冬奥会经济展望</div>
+                <div class="c1">
+                    <div class="content">一般来说，冬奥会对主办城市的经济影响可以分为三个阶段。</div>
+                    <div class="content">(1)冬奥会之前, 对于各类场馆和配套基础设施的投资将逐步增加, 从而推动地方GDP的稳定增长。</div>
+                    <div class="content">(2)奥运年期间, 比赛运营将推动GDP增长达到顶点。</div>
+                    <div class="content">(3)冬奥结束之后, 对于冰雪产业奥运比赛的长期推广将逐步在两地展现出成效，更有包括场馆、基础设施、冰雪运动的普及与发展、改善生态环境以及提升社会文明程度等“奥运遗产”的传承。</div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">经济增长<a name="top1"></a></div>
+                <div class="contBox" style="padding: 5%;">
+                    <div style="width:30%;float: left;">
+                        <p style="color: #00bf04">1.拉动经济，刺激消费</p>
+                        <div class="contentBox">随着北京冬奥会的临近, 中国冰雪产业迎来新一波发展契机。</div>
+                    </div>
+                    <div style="width:70%;float: left;height: 600px;" id="ec9"></div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">经济增长</div>
+                <div id="ec10" style="width:100%;height: 70%;border-radius: 3%;margin-top: 3%"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">经济增长</div>
+                <div class="contBox">
+                    <div class="contPanel" id="ec11" style="height: 35rem"></div>
+                    <div class="contPanel" id="ec12" style="height: 35rem"></div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">经济增长</div>
+                <div id="ec13" style="width:100%;height: 70%;border-radius: 3%;margin-top: 3%"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">经济增长<a name="top2"></a></div>
+                <div class="contBox" style="padding: 5%;">
+                    <div style="width:30%;float: left;">
+                        <p style="color: #00bf04">2.  引进人才，产业改革</p>
+                        <div class="contentBox">随着冬奥会的推进，除了滑雪越发受到国人青睐，我国滑雪旅游产业也呈现高速发展的势头。</div>
+                    </div>
+                    <div style="width:70%;float: left;height: 600px;" id="ec15"></div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">经济增长</div>
+                <div id="ec16" style="width:100%;height: 70%;border-radius: 3%;margin-top: 3%"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">经济增长</div>
+                <div id="ec17" style="width:100%;height: 70%;border-radius: 3%;margin-top: 3%"></div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">改善环境<a name="top3"></a></div>
+                <div class="contBox" style="padding: 5%;">
+                    <div style="width:30%;float: left;">
+                        <p style="color: #00bf04">3.改善环境，增加就业</p>
+                        <div class="contentBox">该工程是世界上首个输送大规模风电、光伏、抽水蓄能等多种能源的四端柔性直流电网，将把张家口地区的清洁能源输送到北京，助力北京冬奥会成为奥运历史上第一次全部使用绿色清洁电力的奥运会。
+                        </div>
+                    </div>
+                    <div style="width:70%;float: left;padding: 5%;"><img src="images/p8.jpg" alt="" width="900px" class="imgBorder"></div>
+                </div>
+            </div>
+
+            <div class="conTitle contBg">
+                <div class="contTitle"><img src="images/emblem.png" alt="">北京2022年冬奥会经济展望</div>
+                <div class="c1">
+                    <div class="content">结语：翘首以待——北京2022年冬奥会</div>
+                    <div class="content">随着北京2022年冬奥会的推进，冬奥知识的普及已成为时下国家体育发展的重要任务。建设体育强国，基础在群众，关键在普及。现如今，无论是政府、企业还是民众都保持着极高的热情，而中国更是具备强大的市场消化能力。作为双奥之城，北京在各项任务上都能够完全胜任冬奥会的的需求，我们有信心，也有能力共同办好一届精彩、非凡、卓越的奥运盛会！</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+    $(function(){
+        getDoubleBarsData();
+        getHalfRingsData();
+        getMixLineData();
+        getMixData();
+        getAreaData();
+        getBarPerData();
+        getBarLinesData();
+        getBarSnowData();
+    })
+</script>
+</body>
+</html>
